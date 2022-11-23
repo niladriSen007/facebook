@@ -13,7 +13,7 @@ const comments = [
     {
       id: 2,
       desc: "So Good  ",
-      name: "Mrinal's wife",
+      name: "Jinal",
       userId: 2,
       profilePicture:
         "https://ik.imagekit.io/ksaehdhru/313375301_1490408928110242_4711694325550971081_n_OW1MXTrCQ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668187553459",
