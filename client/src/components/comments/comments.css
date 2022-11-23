@@ -1,0 +1,63 @@
+.comments {
+  background-color: #fff;
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 97%;
+  align-items: flex-start;
+}
+.comments > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 12px;
+}
+.comments > div > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comments > div > input {
+  width: 85%;
+  padding: 6px;
+}
+.comments > div > button {
+  background-color: #1971c2;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.comments > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comments > div > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.comments > div > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comments > div > div > span:first-of-type {
+  font-weight: 600;
+  color: #111;
+}
+.comments > div > div > span:last-of-type {
+  font-size: 15px;
+}
+.comments > div > .time > .timeText {
+  font-size: 13px;
+  color: #999;
+}/*# sourceMappingURL=comments.css.map */

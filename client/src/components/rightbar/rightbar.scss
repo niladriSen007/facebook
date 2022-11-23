@@ -1,0 +1,215 @@
+.rightbar
+{
+    width: 23vw;
+    padding: 16px 10px;
+    position: sticky;
+    top: 68px;
+    height: calc(100vh - 100px);
+    background-color: rgb(246, 246, 246);
+    z-index: 2;
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+    
+    overflow: scroll;
+    >.container
+    {
+        >.item
+        {
+            box-shadow:  4px 4px 8px #999;
+            padding: 16px;
+            background-color: #fff  ;
+            >span
+            {
+                font-size: 18px;
+            }
+            >.user
+            {
+                margin: 10px 4px;
+                display: flex;
+                // flex-direction: column;
+                gap: 8px;
+                align-items: center;
+                justify-content: space-between;
+                >.user-info
+                {   
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 8px;
+                    >img
+                    {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    span
+                    {
+                        font-weight: 600;
+                    }
+                }
+                >.buttons
+                {
+                    display: flex;
+                    gap: 16px;
+                    .btn1
+                    {
+                        max-width: 60px;
+                        padding: 3px 4px;
+                        border: none;
+                        background-color: #1971c2;
+                        color: #fff;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .btn2
+                    {
+                        padding: 3px 4px;
+                        border: none;
+                        // background-color: #1971c2;
+                        color: #111;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        >.activity
+        {
+            box-shadow:  4px 4px 8px #999;
+            padding: 16px;
+            background-color: #fff  ;
+            margin: 24px 0px;
+            >span
+            {
+                font-size: 18px;
+            }
+            >.user
+            {
+                margin: 10px 4px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                >.user-info
+                {   
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 8px;
+                    >img
+                    {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    span
+                    {
+                        font-weight: 600;
+                    }
+                }
+                >.buttons
+                {
+                    display: flex;
+                    gap: 4px;
+                    .btn1
+                    {
+                        padding: 3px 4px;
+                        border: none;                     
+                        color: #111;
+                    }
+                    .btn2
+                    {
+                        padding: 3px 4px;
+                        border: none;
+                        // background-color: #1971c2;
+                        color: #111;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .online-friends
+        {
+            position: relative;
+            box-shadow:  4px 4px 8px #999;
+            background-color: #fff;
+            padding: 16px ;
+            z-index: 9999999;
+            overflow: hidden;
+            height:60vh;
+            margin-top: 28px;
+            
+            >span
+            {
+                font-size: 18px;
+            }
+            >.eachFriend
+            {   
+                padding: 10px 16px;
+                .user
+                {   
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    
+                    >.user-details
+                    {   
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+                        >img
+                         {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;                  
+                        }
+                        >span
+                        {
+                            >a
+                            {
+                                font-weight: 600;
+                                text-decoration: none;
+                                color: #111;
+                            }
+                        }
+                    }
+                    .online
+                    {
+                        content: "";
+                        color: #111;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: rgb(40, 211, 40);
+                        top: 0;
+                        left: 10%;
+                        z-index: 2;
+                    }
+                    >button
+                    {
+                        cursor: pointer;
+                        border-radius: 4px;
+                        padding: 4px;
+                        border: none;
+                        background-color: rgb(230, 223, 223);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .rightbar
+    {
+        display: none;
+    }
+}

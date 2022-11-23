@@ -1,0 +1,83 @@
+.post {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0px;
+}
+.post > .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post > .user > .details > svg {
+  cursor: pointer;
+}
+.post > .user > .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.post > .user > .userInfo > .userImg {
+  display: flex;
+  gap: 16px;
+}
+.post > .user > .userInfo > .userImg img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post > .user > .userInfo .userName {
+  display: flex;
+  padding: 8px 0px 0px;
+  flex-direction: column;
+}
+.post > .user > .userInfo .userName > a {
+  text-decoration: none;
+}
+.post > .user > .userInfo .userName > a > span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+.post > .user > .userInfo .userName > span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+.post .content {
+  margin: 24px 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post .content > span {
+  font-size: 16px;
+}
+.post .content > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.post .info {
+  display: flex;
+  gap: 16px;
+}
+.post .info > div {
+  display: flex;
+  gap: 6px;
+}
+.post .info > div > svg {
+  cursor: pointer;
+}
+.post .info > div span {
+  font-size: 14px;
+  cursor: pointer;
+}
+.post .info > div > .share1 {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=post.css.map */

@@ -1,0 +1,68 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  gap: 16px;
+  padding: 16px;
+  background-color: rgb(246, 246, 246);
+}
+.share > .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.share > .top > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.share > .top > input {
+  width: 80%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #999;
+  padding: 8px;
+  font-size: 18px;
+}
+.share .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.share .bottom > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.share .bottom > div > svg {
+  cursor: pointer;
+  font-weight: 600;
+}
+.share .bottom > div > span {
+  font-weight: 600;
+}
+.share .bottom > .button > button {
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  background-color: #1971c2;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .share > .top > input {
+    font-size: 14px;
+    width: 60%;
+  }
+  .share > .bottom > div > span {
+    font-size: 14px;
+  }
+  .share > .bottom > .feeling {
+    display: none;
+  }
+}/*# sourceMappingURL=share.css.map */

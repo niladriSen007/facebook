@@ -1,0 +1,185 @@
+.profile
+{
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    height: 100vh;
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+    >.cover-img
+    {
+        >img
+        {
+            width: 900px;
+            // position: relative;
+            height: 300px;
+            object-fit:cover;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2222;
+        }
+    }
+    >.details-container
+    {
+        width: 100%;
+        // border: 2px solid #111;
+        background-color: rgb(246, 246, 246);
+        z-index: 1;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0px;
+        >.profilePic
+        {
+            >img
+            {   
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                position: absolute;
+                top: 200px;//jehutu cover pic er height 300px so eta 200px dilam
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        >.follow
+        {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            h2
+            {
+                font-weight: 600;
+            }
+            span
+            {
+                font-weight: 600;
+                color: #888;
+                letter-spacing: .5px;
+                font-size: 16px;
+            }
+        }
+        >.buttons
+        {
+            margin-top: 16px;
+            display: flex;
+            gap: 16px;
+            >button
+            {
+                border: none;
+                padding: 12px;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: .6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                cursor: pointer;
+                >svg
+                {
+                    font-size: 24px;
+                    padding-right: 8px;
+                }
+            }
+            >.message
+            {
+                background-color: #1971c2;
+                color: #fff;              
+                
+            }
+        }
+    }
+    >.posts-container
+    {
+        margin-top: 10px;
+        // background-color: #fff;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+   
+    .profile
+    {
+        >.cover-img
+        {
+            >img
+            {
+                width: 600px;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:500px) {
+   
+    .profile
+    {
+        >.cover-img
+        {
+            >img
+            {
+                width: 500px;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:450px) {
+   
+    .profile
+    {
+        >.cover-img
+        {
+            >img
+            {
+                width: 450px;
+            }
+        }
+        .details-container >.buttons
+        {
+            >.search
+            {
+                display: none;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:400px) {
+   
+    .profile
+    {
+        >.cover-img
+        {
+            >img
+            {
+                width: 400px;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:350px) {
+   
+    .profile
+    {
+        >.cover-img
+        {
+            >img
+            {
+                width: 350px;
+            }
+        }
+    }
+ }
